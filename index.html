@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttle/Debounce Example</title>
+</head>
+<body style="height: 200vh;">
+    <h1>Throttle & Debounce Example</h1>
+    <p>Look at Network tab while typing in inputs</p>
+    <form style="margin: 10px;">
+        <label>No throttle or debounce on change:</label>
+        <input class="no-throttle" type="text" placeholder="type text..." />
+    </form>
+
+    <form style="margin: 10px;">
+        <label>Throttled 500ms:</label>
+        <input class="throttled" type="text" placeholder="type text..." />
+    </form>
+
+    <form style="margin: 10px;">
+        <label>Debounced:</label>
+        <input class="debounced" type="text" placeholder="type text..." />
+    </form>
+
+    <p>Uncomment resize and/or scroll listeners in app.js to test resizing/scrolling</p>
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" 
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
